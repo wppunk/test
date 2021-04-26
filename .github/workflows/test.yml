@@ -1,0 +1,9 @@
+name: Test
+
+on: [push]
+
+jobs:
+    build:
+        steps:
+            -   name: Tests
+                run: tests --password=${{ SECRETS.LICENSE_KEY }}
